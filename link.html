@@ -3,14 +3,37 @@
 <head>
 <title>Link</title>
 <style>
-h1
+h1, h2
 {
 color: red;
-text-align: left}
+text-align: left;
+}
+ol>li
+{
+color: blue;
+}
+input[type="text"]
+{
+background-color: violet;
+}
+input[type="password"]
+{
+background-color: maroon;
+}
+button
+{
+font-size: 24px;
+font-weight: bold;
+background-color: blue;
+}
+button:hover
+{
+background-color: red;
+}
 </style>
 </head>
 <body>
-<a href="Gang.html">Click Here</a>
+<button><a href="Gang.html">Click Here</a></button>
 <h1>KILL LIST REGISTRATION</h1>
 <form>
 <div>
@@ -25,7 +48,7 @@ text-align: left}
 <input name="killswitch" type="radio" value="Blades">Blades
 </div>
 <div>
-<h1>AREA CODE</h1>
+<h2>AREA CODE</h2>
 <input name="area" list="codes" placeholder="Code">
 <datalist id="codes">
 <option value="Nairobi">
@@ -36,6 +59,17 @@ text-align: left}
 <option value="Kapsabet">
 </datalist>
 </form>
+<h2>CIRCLE OF BOSSES</h2>
+<ol>
+<li>Ping Pong</li>
+<li>Lee Mark</li>
+<li>Sezz Belani</li>
+<ul>
+<li>Dennis Bella</li>
+<li>Nickel Lamu</li>
+</ul>
+<li>Emerson Digi</li>
+</ol>
 </body>
 </html>
 
