@@ -1,0 +1,27 @@
+h1, h2
+{
+color: red;
+text-align: left;
+}
+ol>li
+{
+color: blue;
+}
+input[type="text"]
+{
+background-color: violet;
+}
+input[type="password"]
+{
+background-color: maroon;
+}
+button
+{
+font-size: 24px;
+font-weight: bold;
+background-color: blue;
+}
+button:hover
+{
+background-color: red;
+}
