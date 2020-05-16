@@ -1,4 +1,7 @@
-names = ["Alice", "Cornelius", "Gang"]
-for name in names:
-	print(name)
-
+s = set()
+s.add(1)
+s.add(2)
+s.add(6)
+s.add(5)
+s.add(2)
+print(s)
