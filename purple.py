@@ -1,4 +1,3 @@
-name = "Alice"
-coordinates = (65.6, 54.8)
-name = ["Alice", "Bob", "Frank"]
+for i in range(5):
+	print(i)
 
