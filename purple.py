@@ -1,12 +1,9 @@
-i = 28
-print(f"i is {1}")
+x = 25
 
-f = 5.6
-print(f"f is {f}")
-
-b = False
-print(f"b is {b}")
-
-n = None
-print(f"n is {n}")
+if x > 0:
+	print("x is lethal")
+elif  x < 0:
+	print("x is non lethal")
+else:
+	print("x is zero")
 
