@@ -1,3 +1,4 @@
-for i in range(5):
-	print(i)
+names = ["Alice", "Cornelius", "Gang"]
+for name in names:
+	print(name)
 
