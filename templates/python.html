@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PYTHON</title>
+<title>PYTHON DAY</title>
+<style>
+body
+{
+text-align: left;
+}
+</style>
 </head>
 <body>
-<h1>{{ headline }}</h1>
+<button><a href="{{ url_for('venom') }}">Venom</a></button>
+<h1>TITLES</h1>
+<ul>
+{% for name in names %}
+<li>{{ name }}</li>
+{% endfor %}
+</ul>
 </body>
 </html>
