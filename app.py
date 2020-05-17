@@ -6,6 +6,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def python():
+	names = ["Cornelius", "Samaritan", "Root"]
+	return render_template("python.html", names=names)
+
+@app.route("/venom")
+def venom():
 	now = datetime.datetime.now()
-	python_day = now.month == 5 and now.day == 17
-	return render_template ("python.html", python_day=python_day) 
+	venom = now.month == 3 and now.day == 17
+	return render_template("venom.html", venom=venom)
+
