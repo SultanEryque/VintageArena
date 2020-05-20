@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>venom</title>
-<style>
-h1
-{
-text-align: left;
-color: blue;
-font-family: roman;
-}
-h2
-{
-text-align: left;
-color: red;
-font-family: aerial;
-}
-</style>
-</head>
-<body>
-{% if venom %}
-<h1>Its Venom Day</h1>
-{% else %}
-<h2>Not Today, Try Next</h2>
-{% endif %}
-<button><a href="{{ url_for('python') }}">Back to PYTHON</a></button>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block heading %}
+	BLACK BAIT
+{% endblock %}
+
+{% block body %}
+Welcome {{ name }}
+{% endblock %}
