@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>PYTHON DAY</title>
-<style>
-body
-{
-text-align: left;
-}
-</style>
-</head>
-<body>
-<button><a href="{{ url_for('venom') }}">Venom</a></button>
-<h1>TITLES</h1>
-<ul>
-{% for name in names %}
-<li>{{ name }}</li>
-{% endfor %}
-</ul>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block heading %}
+	TITLES
+{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('venom') }}" method="post">
+<input type="text" name="name" placeholder="FULL NAME">
+<button>ACCEPT</button>
+</form>
+{% endblock %}
+
