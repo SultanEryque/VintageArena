@@ -1,17 +1,13 @@
-import datetime
-
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 @app.route("/")
 def python():
-	names = ["Cornelius", "Samaritan", "Root"]
-	return render_template("python.html", names=names)
+	return render_template("python.html")
 
-@app.route("/venom")
+@app.route("/venom", methods=["POST"])
 def venom():
-	now = datetime.datetime.now()
-	venom = now.month == 3 and now.day == 17
-	return render_template("venom.html", venom=venom)
+	name = request.form.get("name")
+	return render_template("venom.html", name=name)
 
