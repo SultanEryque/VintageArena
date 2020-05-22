@@ -1,13 +1,18 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
+from flask_session import Session
 
 app = Flask(__name__)
 
-@app.route("/")
-def python():
-	return render_template("python.html")
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+session(app)
 
-@app.route("/venom", methods=["POST"])
-def venom():
-	name = request.form.get("name")
-	return render_template("venom.html", name=name)
+@app.route("/", methods=["GET", "POST"])
+def python():
+	if session.get("notes") is None:
+		session["notes"] = []
+	if request.method == "POST":
+		note = request.form.get("note")
+		session["notes"].append(note)
+	return render_template("python.html", notes=notes)
 
