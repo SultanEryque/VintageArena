@@ -5,8 +5,13 @@
 {% endblock %}
 
 {% block body %}
-<form action="{{ url_for('venom') }}" method="post">
-<input type="text" name="name" placeholder="FULL NAME">
+<ul>
+{% for note in notes %}
+<li>{{ note }}</li>
+{% endfor %}
+</ul>
+<form action="{{ url_for('python') }}" method="post">
+<input type="text" name="note" placeholder="FULL NAME">
 <button>ACCEPT</button>
 </form>
 {% endblock %}
