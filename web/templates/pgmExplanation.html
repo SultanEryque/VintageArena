@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<meta charset="utf-8">
+<meta name="Author" content="Erickson Amuyunzu">
+<title>Explanation C++</title>
+</head>
+
+<body>
+<h1>C++</h1>
+<h2>Description</h2>
+C++ is an upgrade of the C programming language. It is considered a low level language.
+<dfn>low-level language</dfn> is described as one that is close to machines, 
+<em>machine language.</em>
+Its an upgrade because it also employs <abbr title="Object Oriented Programming">OOP</abbr> which is not available in <strong>C</strong>. The language is
+platform independent hence can compiled in any <abbr title="Operating System">OS
+</abbr>. <strong>Ulla Kirch-Prinz</strong> and <strong>Peter Prinz</strong> 
+book <cite>A Complete Guide To Programming In C++</cite> states <q> C++ was created
+by Bjarne Stroustrap and his team at Bell Labs to help implement simulation
+projects in an object oriented and efficient way.</q><br>
+
+The sample code below is a simple program that basically takes two numbers 
+from  user input i.e <var>a</var> and <var>b</var> and adds them to provide
+the sum e.g if a user inputs <kbd>50</kbd> and <kbd>30</kbd>. It will output
+<samp>The sum is 80</samp>. <strong><em>How Cool!!!</em></strong>.
+</p>
+<pre>
+<code>
+//The program adds two user inputs and outputs the sum
+#include <iostream>       //Declaration of cout, cin
+#include <string>         //String manipulation
+using namespace std;
+
+int main()
+{
+   int a, b, sum;         //variable declaration
+   string p "Welcome, \nKindly input two integers to add";
+
+   cout << p << endl;
+   
+   cin >> a;       //reads 1st int and assigns to var a
+   cin >> b;       //reads 2nd int and assigns to var b
+
+   sum = a + b;    //results assigned to variable
+
+   cout << "The sum is " << sum << endl;
+
+   return 0;
+}
+
+</code>
+</pre>
+</html>
+
+ 

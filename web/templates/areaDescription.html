@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="John Dean"
+<meta name="description" content="Chapter 3. Cascading Style Sheets (CSS)">
+<title>Area Description</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename="styles/lawrenceMicrogrid.css")}}">
+ <style>
+    .downtown {font-family: Helvetica, sans-serif;}
+    .eastLawrence {font-family: "Times New Roman", serif;}
+    .westLawrence {
+         font-family: cursive;
+         line-height: 1.2em;
+    }
+    .ku {
+          font-family: monospace;
+          font-weight: bold;
+    }
+    span.title {font-variant: small-caps;}
+    span.opportunity {font-style: italic;}
+</style>
+</head>
+<body>
+<h2>Description of the Area</h2>
+<p class="downtown>
+ <span class="title">Downtown Lawrence</span> comprises about 20 city
+ blocks between South Park and the Kansas River. This area includes a
+ county courthouse, an art centre, a library, the city hall, offices,
+ apartments and two hotels. <span class="opportunity">It also has many 
+ parking lots and attached shop and restaurants with roofs of similar height
+ that could accomodate solar collectors</span>
+</p>
+<p class="eastLawrence">
+ East of downtown is an 80-block area called <span class="title">east
+ Lawrence</span>. The western half is residential with many small houses and
+ a grade school. The eastern half is indusrial, with manufacturing buildings,
+ warehouses, a railroad station and tracks, open parking areas, a rock 
+ crushing plant, and the city's sewage plant. <span class="opportunity">Solar
+ collectors could cover parkng areas and flat industrial roofs. With 
+ combined heat and power (CHP), this areas industry might also provide
+ heat and electricity for itself, adjacent residents and nearby downtown.
+ </span>
+</p>
+<p class="westLawrence">
+ West of downtown is an 80-block area called <span class="title">Old West 
+ Lawrence</span>. The southern two-thirds is residential and includes a grade
+ school. The nothern third has several medical facilities with large parking
+ lots, and there is some industrial land by railroads tracks at the north
+ end. <span class="opportunity">Solar collectors could go on the school,
+ medical and industrial properties, and on residence roofs not obstucted by 
+ trees</span>.
+</p>
+<p class="ku">
+ Southwest of Old West Lawrence is <span class="title">The University of
+ Kansas</span> (KU). Before switching to utility power around 1960, KU 
+ produced its own heat and electricity. <span class="opportunity">Solar
+ collectors could cover many KU building roofs parking lots. And KU could 
+ implement a robust renewable microgrid like the one at The Universty of 
+ Carlifornia San Diego</span>
+</p>
+</body>
+</html>   

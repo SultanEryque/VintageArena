@@ -1,0 +1,23 @@
+/* Erickson Amuyunzu */
+
+.red {background-color: red;}
+.yellow-bg {background-color: rgb(255, 255, 0);}
+.yellow-bg2 {background-color: rgb(255, 255, 0,6 .4);}
+.yellow-bg3 {background-color: rgb(255, 255, 0); opacity: .4;}
+
+blockquote {font-family: "New Century Schoolbook", Times, serif;
+            border-style: dotted;
+            border-color: blue;
+            padding: 20px;}
+
+.hot {background-color: darkred;}
+.cold {background-color: blue;}
+.label {
+  color: white;
+  font: bold xx-large Lucida, monospace;
+  border: solid black;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px;
+  display: inline-block;
+ } 
